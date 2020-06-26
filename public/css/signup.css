@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Amatic+SC:wght@700&family=Pangolin&family=Piedra&family=Shadows+Into+Light&display=swap');
+header{
+    background-color: #111166;
+    font-family: cursive;
+    font-size:20px;
+}
+
+header a{
+  color: #fff !important;
+}
+
+#toggler{
+  background-color: #fff;
+}
+
+.container-fluid{
+    background-color:#00005c ;
+    width:fit-content;
+    height: 250px;
+}
+
+.headone{
+    color: whitesmoke;
+    font-family: 'Pangolin', cursive;
+    font-size:80px;
+}
+
+.well {
+    margin-top:11px;
+    background-color:#000272;
+    border-color:#000022;
+    color:#efefff;
+    min-height:100px;
+    min-width: 200px;
+}
+
+.sign-box{
+    width: 400px;
+    height: 1000px;
+    margin: 100px;
+    margin-left: 260px;
+    position:relative;
+    padding:20px;
+    border: 1px solid blue;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: #74d4c0; */
+    background-image:url(/images/log.jpg);
+    background-size: cover;
+    font-family: 'pacifico',cursive;
+    color:#9a1f40;
+}
+
+.head-one{
+    padding-bottom: 5px;
+    text-align: center;
+    font-family: 'chelsea',cursive;
+    background-clip: text;
+        /* Create a conic gradient. */
+        /* Double percentages to avoid blur (#000 10%, #fff 10%, #fff 20%, ...). */
+        background: #CA4246;
+        background-color: #CA4246;
+        background: conic-gradient(
+          #CA4246 16.666%, 
+          #E16541 16.666%, 
+          #E16541 33.333%, 
+          #F18F43 33.333%, 
+          #F18F43 50%, 
+          #8B9862 50%, 
+          #8B9862 66.666%, 
+          #476098 66.666%, 
+          #476098 83.333%, 
+          #A7489B 83.333%);
+        
+        /* Set thee background size and repeat properties. */
+        background-size: 57%;
+        background-repeat: repeat;
+        
+        /* Use the text as a mask for the background. */
+        /* This will show the gradient as a text color rather than element bg. */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        
+        /* Animate the text when loading the element. */
+        /* This animates it on page load and when hovering out. */
+        animation: rainbow-text-animation-rev 0.5s ease forwards;
+      
+        cursor: pointer;
+        /* Add animation on hover. */
+     
+}
+.head-one:hover {
+    animation: rainbow-text-animation 0.5s ease forwards;
+  }
+  
+  /* Move the background and make it larger. */
+  /* Animation shown when hovering over the text. */
+  @keyframes rainbow-text-animation {
+    0% {
+      background-size: 57%;
+      background-position: 0 0;
+    }
+    20% {
+      background-size: 57%;
+      background-position: 0 1em;
+    }
+    100% {
+      background-size: 300%;
+      background-position: -9em 1em;
+    }
+  }
+  
+  /* Move the background and make it smaller. */
+  /* Animation shown when entering the page and after the hover animation. */
+  @keyframes rainbow-text-animation-rev {
+    0% {
+      background-size: 300%;
+      background-position: -9em 1em;
+    }
+    20% {
+      background-size: 57%;
+      background-position: 0 1em;
+    }
+    100% {
+      background-size: 57%;
+      background-position: 0 0;
+    }
+  }
+
+.socials{
+    margin-top: 8%;
+    text-align: center;
+}
+
+.socials a{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    border: 1px solid #fff;
+    color: cornsilk;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.socials a:nth-child(1){
+    background: #3b5998;
+}
+.socials a:nth-child(2){
+    background: #55acee;
+}
+.socials a:nth-child(3){
+    background: #bd081c;
+}
+.socials a:nth-child(4){
+    background: #0077bc;
+}
+
+.socials a i{
+    padding: 8px 0;
+}
+
+.right-box{
+    position:absolute;
+    top: 0;
+    left: 100%;
+    width: 350px;
+    height: 1000px;
+    font-family: 'shadows into light',cursive;
+    box-sizing: border-box;
+    padding: 10px 30px 30px 30px;
+    background: linear-gradient(to right ,#2A2a72,#009FFD);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* box-shadow: 0 14px 28px rgba(0,0,0,0.25),10px 10px rgba(0, 0, 0, 0.22); */
+}
+
+.right-box h1{
+  font-size: 50px;
+}
+
+.r-box{
+  font-size: 20px;
+}
+
+/* footer */
+footer{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin-left:20px;
+}
+footer h6{
+  font-size: 20px;
+}

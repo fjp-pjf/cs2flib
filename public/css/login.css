@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Amatic+SC:wght@700&family=Pangolin&family=Piedra&family=Shadows+Into+Light&display=swap');
+header{
+    background-color: #111166;
+    font-family: cursive;
+    font-size:20px;
+}
+
+header a{
+    color: #fff !important;
+}
+
+#toggler{
+    background-color: #fff;
+}
+
+.container-fluid{
+    background-color:#00005c ;
+    width:fit-content;
+    height: 250px;
+}
+
+.headone{
+    margin-left:-340px;
+    color: whitesmoke;
+    font-family: 'Pangolin', cursive;
+    font-size:80px;
+}
+
+.well {
+    margin-top:11px;
+    background-color:#000272;
+    border-color:#000022;
+    color:#efefff;
+    min-height:100px;
+    min-width: 200px;
+}
+/* form portion */
+.box{
+    margin-top:50vmin ;
+    width:400px;
+    padding:40px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background:#191919;
+    border-radius:20px;
+    text-align: center;
+}
+.box h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.box p{
+    color: ivory;
+}
+.box input[type="text"],.box input[type="password"]{
+    border:0;
+    background:none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width:200px;
+    outline:none;
+    color: white;
+    border-radius:24px;
+    transition:0.25s;
+}
+.box input[type="text"]:focus,.box input[type="password"]:focus{
+    width:280px;
+    border-color:#2ecc71;
+}
+.box input[type="submit"]{
+    border:0;
+    background:none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline:none;
+    color: white;
+    border-radius:24px;
+    transition:0.25s;
+    cursor:pointer;
+}
+.box input[type="submit"]:hover{
+    background:#2ecc71;
+}
+
+.wrapper{
+    width: 400px;
+    height: 460px;
+    color: #000;
+    top: 50%;
+    left: 50%;
+    padding: 60px 30px;
+    margin-bottom: 130px;
+    position: relative;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    box-shadow: 8px 8px 50px #000;
+    background-image: url(/images/log.jpg);
+    background-size: cover;
+}
+h1{
+    margin: 0;
+    padding: 0;
+    font-weight: bolder;
+    font-size: 22px;
+    color: crimson;
+    text-align: center;
+    margin-bottom: 8%;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.wrapper-input,.wrapper input[type=submit]{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.wrapper input[type=text],.wrapper input[type=email],.wrapper input[type=password]{
+    padding: 6px;
+    margin: 8px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    background: transparent;
+    outline: none;
+    /* height: 30px; */
+    font-size: 16px;
+    opacity: 1;
+    color:chocolate;
+}
+
+.wrapper input[type=submit]{
+border: none;
+outline: none;
+height: 40px;
+background:#2ecc71;
+color:crimson;
+font-size: 18px;
+font-weight: bold;
+font-family: 'Shadows Into Light', cursive;
+}
+
+.wrapper input[type=submit]:hover{
+    cursor: pointer;
+}
+
+.wrapper a{
+    font-size: 14px;
+    text-decoration: none;
+    color: #fff;
+    opacity:0.8;
+}
+
+.wrapper a:hover{
+    color: goldenrod;
+    opacity: 1;
+}
+
+.bottom-text{
+    color: #111166;
+}
+
+.bottom-text input{
+    width: 10%;
+    float: left;
+}
+
+.bottom-text a{
+    float: right;
+}
+
+.socials{
+    margin-top: 8%;
+    text-align: center;
+}
+
+.socials a{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.socials a:nth-child(1){
+    background: #3b5998;
+}
+.socials a:nth-child(2){
+    background: #55acee;
+}
+.socials a:nth-child(3){
+    background: #bd081c;
+}
+.socials a:nth-child(4){
+    background: #0077bc;
+}
+
+.socials a i{
+    padding: 8px 0;
+}
+
+/* footer */
+footer{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left:20px;
+}
+footer h6{
+    font-size: 20px;
+}
+  

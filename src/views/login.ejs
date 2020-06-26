@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=title%></title>
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" 
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href=""></a>
+          <button class="navbar-toggler" type="button" id="toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <!--the remaining nav-->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <%for(i=0;i<navs.length;i++){%>
+              <li class="nav-item active">
+                <a class="nav-link" href="<%=navs[i].link%>"><%=navs[i].name%><span class="sr-only">(current)</span></a>
+              </li>
+              <%}%>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </div>
+        </nav>
+      </header>
+      <!--large blue container-->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-7">
+            <h1 class="headone">Library</h1>
+          </div>
+          <div class="col-md-5">
+            <div class="well well-lg">
+              <div class="row">
+                <div class="col-sm-12">
+      
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+<div class="wrapper">
+  <h1>Log In</h1>
+  <form action="/login" method="POST" onsubmit="return validate()">
+    <input type="email" id="inputEmail4" name="mail" placeholder="Enter Email Id">
+    <label for="email" id="mailError"></label>
+    <input type="password" name="password" id="inputPassword4" placeholder="Enter password">
+    <label for="password" id="pwdError"></label>
+    <input type="submit" id="btn" value="Login">
+  </form>
+  <div class="bottom-text">
+    <input type="checkbox"name="check"id="tick">
+    <label for="checkbox">Remember Me</label>
+    <a href="#">Forgot Password ?</a>
+  </div>
+  <div class="socials">
+    <a href="#"><i class="fa fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    <a href="#"><i class="fa fa-instagram"></i></a>
+    <a href="#"><i class="fa fa-linkedin"></i></a>
+  </div>
+</div>
+<!--footer-->
+<footer>
+  <h6>Follow Us</h6>
+  <div class="btn-group">
+      <button type="button"class="btn btn-info">Twitter</button>
+      <button type="button"class="btn btn-primary">Facebook</button>
+      <button type="button"class="btn btn-danger">Google+</button>
+  </div>    
+</footer>
+    <script src="/js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="/css/addbooks.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" 
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+        <!--header-->
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href=""></a>
+          <button class="navbar-toggler" type="button" id="toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <!--the remaining nav-->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <%for(i=0;i<nav.length;i++){%>
+              <li class="nav-item active">
+                <a class="nav-link" href="<%=nav[i].link%>"><%=nav[i].name%><span class="sr-only">(current)</span></a>
+              </li>
+              <%}%>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </div>
+        </nav>
+      </header>
+      <section>
+        <!--large blue container-->
+      </section>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-7">
+            <h1 class="headone"><i class="fa fa-book p-3" id="icon" aria-hidden="true"></i><%=title%></h1>
+          </div>
+          <div class="col-md-5">
+            <div class="well well-lg">
+              <div class="row">
+                <div class="col-sm-12">
+      
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-sm text-center">
+        <h3 class="head mt-10"><%= title%></h3>
+        <form action="<%= action%>" id="myform" enctype="multipart/form-data" method="POST"  onsubmit="return addBook()">
+            <input type="text"  id="inputTitle4" name="title" placeholder="Enter name of the book" required <% if (updateMode) { %>
+             value="<%= book.title%> "
+            <% } %>><br>
+            <label for="username" id="titleError"></label>
+            <input type="text" id="inputAuthor4" name="author" placeholder="Enter name of the author" required <% if (updateMode) { %>
+             value="<%= book.author%> "
+            <% } %>><br>
+            <label for="email" id="authorError"></label>
+            <input type="text" id="inputGenre4" name="genre" placeholder="Enter Genre" required <% if (updateMode) { %>
+             value="<%= book.genre%> "
+            <% } %>><br>
+            <label for="password" id="genreError"></label>
+            <input type="file" name="image" placeholder="Upload Image" required><br>
+            <% if (updateMode) { %>
+              <input type="hidden" name="bookid" value="<%= book._id%>"> 
+            <% } %>
+            <input type="submit" id="submit" value="<%= title%>">
+        </form>
+      </div>
+    
+    <footer>
+        <h6>Follow Us</h6>
+        <div class="btn-group">
+          <button type="button"class="btn btn-info">Twitter</button>
+          <button type="button"class="btn btn-primary">Facebook</button>
+          <button type="button"class="btn btn-danger">Google+</button>
+        </div>    
+        </footer>
+    <!--end total-->
+    <script src="/js/addbooks.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    </body>
+    </html>
+</body>
+</html>

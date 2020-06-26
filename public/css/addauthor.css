@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Amatic+SC:wght@700&family=Pangolin&family=Piedra&family=Shadows+Into+Light&display=swap');
+/* header */
+header{
+    background-color: #111166;
+    font-family: cursive;
+    font-size:20px;
+}
+
+header a{
+    color: #fff !important;
+}
+
+#toggler{
+    background-color: #fff;
+}
+
+.container-fluid{
+    background-color:#00005c ;
+    width:fit-content;
+    height: 250px;
+}
+
+.headone{
+    color: whitesmoke;
+    font-family: 'Pangolin', cursive;
+    font-size:80px;
+}
+
+.well {
+    margin-top:11px;
+    background-color:#000272;
+    border-color:#000022;
+    color:#efefff;
+    min-height:100px;
+    min-width: 200px;
+}
+/* body */
+
+.container-box{
+    margin-top:-90px;
+    background-color: white;
+    padding-bottom: 50px;
+}
+
+img{
+    width:100px;
+    height:100px; 
+    margin-top:20px;
+    margin-left:10px;
+    margin-right:0;
+    border-radius: 50%;
+}
+
+span{
+    background-color: grey;
+    color: white;
+    padding: 4px;
+    font-size:14;
+}
+
+.fa{
+    -webkit-animation: spin 9s linear infinite;
+    -o-animation: spin 9s linear infinite;
+    animation: spin 9s linear infinite;
+}
+
+@keyframes spin{
+    from{
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.hsix{
+    color: grey;
+    text-decoration: none !important;
+}
+
+.media-body{
+    margin-top:40px;
+    line-height: 2;
+    margin-left:0;
+    padding-left:20px;
+    padding-bottom: 20px;
+}
+
+.row {
+    padding:10px;
+    padding-right: 20px;
+}
+/*navbar end*/
+
+/*middle portion*/
+.container-sm{
+margin-top: 30px;
+width:400px !important;
+height:500px;
+background-image:url(/images/bg.jpg);
+background-size: cover;
+}
+
+.head{
+    padding: 10px;
+    color: darkred;
+    font-family:'Piedra',cursive;
+}
+
+input[type=text],input[type=file],input[type="submit"]{
+    padding: 6px;
+    margin-top: 30px;
+    width: 300px;
+    border-radius: 20px;
+    border-width: 0;
+    font-size: 16px;
+    font-weight: bold;
+    font-family:'Shadows Into Light', cursive;
+    color: black;
+}
+
+input[type="submit"]{
+    background-color: coral;
+    width: 200px;
+    color: darkred;
+    margin-top: 4px !important;
+}
+
+::placeholder {
+    color: blue;
+    opacity: 1;
+    text-align: center;
+  }
+
+/*footer*/
+
+footer{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left:20px;
+    margin-top: 20px;
+}
+
+footer h6{
+    font-size: 20px;
+}
